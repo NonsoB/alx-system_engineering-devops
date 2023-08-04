@@ -1,6 +1,3 @@
 #!/bin/bash
-ls -lnA "$PWD" 
-cd ..
-ls -lnA
-cd /boot
-ls -lnA
+ls -A 'cd .. ls -lnA' 'cd /boot ls -lnA'
+
