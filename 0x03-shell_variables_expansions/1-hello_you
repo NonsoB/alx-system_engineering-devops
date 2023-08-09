@@ -1,2 +1,2 @@
 #!/bin/bash
-alias hello_user='echo "Hello $(root),"'
+echo "Hello $(whoami),"
