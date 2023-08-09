@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "hello $USER"
+alias hello_user='echo "Hello $(root),"'
