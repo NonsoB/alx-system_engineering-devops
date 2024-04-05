@@ -1,0 +1,17 @@
+
+defaults
+  mode http
+  timeout client 15s
+  timeout connect 10s
+  timeout server 15s
+  timeout http-request 10s
+
+frontend nonsob-tech-frontend
+    bind *:80
+    default_backend nonsob-tech-backend
+
+backend nonsob-tech-backend
+    balance roundrobin
+    server 503683-web-01 54.227.221.32:80 check
+    server 503683-web-02 100.25.30.226:80 check
+
